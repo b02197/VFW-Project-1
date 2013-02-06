@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset=utf-8 />
+            <meta keyword="Gear"/>
+            <meta description=""/>
+            <meta robots=""/>
+            <meta viewport=""/>
+            
+            <title>Gear Adder</title>
+        </head>
+        <body>
+            <h1>Add Your Gear</h1>
+            <form action="" method="post" >
+                <fieldset>
+                    <legend>Character Information</legend>
+                    <ul>
+                        <li><label for="cName">Character Name:</label><input type="text" id="cName" /></li>
+                        <li><label for="cLevel">Character Level:</label><input type="text" id="cLevel"/></li>
+                    </ul>
+                </fieldset>
+                <fieldset>
+                    <legend>Gear Informtion</legend>
+                        <li>
+                            <label for="cGear">Type of Gear:</label>
+                                    <select id="cGear">
+                                        <optgroup label="Gear">
+                                            <option value="Head">Head</option>
+                                            <option value="Shoulders">Shoulders</option>
+                                            <option value="Back">Back</option>
+                                            <option value="Chest">Chest</option>
+                                            <option value="Bracers">Bracers</option>
+                                            <option value="Gloves">Gloves</option>
+                                            <option value="Pants">Pants</option>
+                                            <option value="Feet">Feet</option>
+                                         </optgroup>
+                                        <optgroup label="Jewerly">
+                                            <option value="Neck">Neck</option>
+                                            <option value="lRing">Left Ring</option>
+                                            <option value="rRing">Right Ring</option>
+                                            <option value="lTrinket">Left Trinket</option>
+                                            <option value="rTrinket">Right Trinket</option>
+                                        </optgroup>
+                                        <optgroup label="Weapon">
+                                            <option value="mHand">Main Hand</option>
+                                            <option value="oHand">Off-Hand</option>
+                                            <option value="twoHand">Two handed</option>
+                                            <option value="shield">Shield</option>
+                                        </optgroup>
+                                    </select>
+                        </li>
+                        <li>Gear Quality</li>
+                            <ul>
+                                <li><input type="radio" checked value="common" id="common" name="quality" /><label for="common">Common</label></li>
+                                <li><input type="radio" value="uncommon" id="uncommon" name="quality"/><label for="uncommon">Uncommon</label></li>
+                                <li><input type="radio" value="rare" id="rare" name="quality"/><label for="rare">Rare</label></li>
+                                <li><input type="radio" value="epic" id="epic" name="quality"/><label for="epic">Epic</label></li>
+                            </ul>
+                                <li><label for="gName">Gear Names</label><input type="text" id="gName"/></li>
+                        </li>
+                </fieldset>
+                <input type="submit" value="Log your gear" />
+                <input type="hidden" value=""/>
+            </form>
+        </body>
+    </html>
