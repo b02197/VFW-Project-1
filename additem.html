@@ -13,7 +13,12 @@
             <form action="" method="post" >
                 <fieldset>                       
                     <legend>Make a burger</legend>
-                    <input type="range" name="cheese" min="1" max="2"> Do you want cheese? Yes or No
+                    <ul>
+                        <li><label for="sName">Server Name:</label><input type="text" id="sName" /></li>
+                        <li><label for="tNum">Table Number:</label><input type="text" id="tNum" /></li>
+                        <li><label for="tDate">Today's Date:</label><input type="date" id="tDate" /></li>
+                        <li><label for="cheese">Do you want cheese? Yes or No</label><input type="range" name="cheese" min="1" max="2"></li>
+                    </ul>
                     <li>
                         <label for="temp">What temp would you like your burger?</label>
                         <select id="temp">
@@ -24,9 +29,20 @@
                             <option value="Well">Well</option>
                         </select>
                     </li>
+                    <li>What condiments?
+                        <ul>
+                            <li><input type="checkbox" value="Ketchup" id="ketch" /><label for="ketch">Ketchup</label></li>
+                            <li><input type="checkbox" value="Mustard" id="must" /><label for="must">Mustard</label></li>
+                            <li><input type="checkbox" value="Mayo" id="mayo" /><label for="mayo">Mayo</label></li>
+                            <li><input type="checkbox" value="Pickle" id="pick" /><label for="pick">Pickle</label></li>
+                            <li><input type="checkbox" value="Onion" id="onion" /><label for="onion">Onion</label></li>
+                            <li><input type="checkbox" value="Lettuce" id="lett" /><label for="lett">Lettuce</label></li>
+                            <li><input type="checkbox" value="Tomatoe" id="toma" /><label for="toma">Tomatoe</label></li>
+                        </ul>
+                    </li>
                 </fieldset>
                 <input type="submit" value="Log your gear" /> <!-- Submit button for form -->
-                <input type="hidden" value=""/>   <!-- hidden button -->
+                <input type="hidden" value="true"/>   <!-- hidden button -->
             </form>
         </body>
     </html>
