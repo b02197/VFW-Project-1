@@ -1,66 +1,34 @@
 <!DOCTYPE html>
     <html>
         <head>
-            <meta charset=utf-8 />
-            <meta keyword="Gear"/>
-            <meta description=""/>
-            <meta robots=""/>
-            <meta viewport=""/>
-            
-            <title>Gear Adder</title>
+            <meta charset="utf-8" />
+            <meta name="keyword" content="cheeseburger, hamburger" />
+            <meta name="description" content= "This is a web app for making a burger order" />
+            <meta name= "robots" content= "index, follow" />
+            <meta name="viewport" content="user-scalable=no, width=device-width" />
+            <title>Burger Maker</title>
         </head>
         <body>
-            <h1>Add Your Gear</h1>
+            <h1>Place a Burger order</h1>
             <form action="" method="post" >
-                <fieldset>
-                    <legend>Character Information</legend>
-                    <ul>
-                        <li><label for="cName">Character Name:</label><input type="text" id="cName" /></li>
-                        <li><label for="cLevel">Character Level:</label><input type="text" id="cLevel"/></li>
-                    </ul>
+                <fieldset>                       
+                    <legend>Make a burger</legend>
+                    <input type="range" name="cheese" min="1" max="2"> Do you want cheese? Yes or No
+                    <li>
+                        <label for="temp">What temp would you like your burger?</label>
+                        <select id="temp">
+                            <option value="Rare">Rare</option>
+                            <option value="Med-Rare">Med-Rare</option>
+                            <option value="Medium">Medium</option>
+                            <option value="Med-Well">Med-Well</option>
+                            <option value="Well">Well</option>
+                        </select>
+                    </li>
+                    <input type=""
+                  
                 </fieldset>
-                <fieldset>
-                    <legend>Gear Informtion</legend>
-                        <li>
-                            <label for="cGear">Type of Gear:</label>
-                                    <select id="cGear">
-                                        <optgroup label="Gear">
-                                            <option value="Head">Head</option>
-                                            <option value="Shoulders">Shoulders</option>
-                                            <option value="Back">Back</option>
-                                            <option value="Chest">Chest</option>
-                                            <option value="Bracers">Bracers</option>
-                                            <option value="Gloves">Gloves</option>
-                                            <option value="Pants">Pants</option>
-                                            <option value="Feet">Feet</option>
-                                         </optgroup>
-                                        <optgroup label="Jewerly">
-                                            <option value="Neck">Neck</option>
-                                            <option value="lRing">Left Ring</option>
-                                            <option value="rRing">Right Ring</option>
-                                            <option value="lTrinket">Left Trinket</option>
-                                            <option value="rTrinket">Right Trinket</option>
-                                        </optgroup>
-                                        <optgroup label="Weapon">
-                                            <option value="mHand">Main Hand</option>
-                                            <option value="oHand">Off-Hand</option>
-                                            <option value="twoHand">Two handed</option>
-                                            <option value="shield">Shield</option>
-                                        </optgroup>
-                                    </select>
-                        </li>
-                        <li>Gear Quality</li>
-                            <ul>
-                                <li><input type="radio" checked value="common" id="common" name="quality" /><label for="common">Common</label></li>
-                                <li><input type="radio" value="uncommon" id="uncommon" name="quality"/><label for="uncommon">Uncommon</label></li>
-                                <li><input type="radio" value="rare" id="rare" name="quality"/><label for="rare">Rare</label></li>
-                                <li><input type="radio" value="epic" id="epic" name="quality"/><label for="epic">Epic</label></li>
-                            </ul>
-                                <li><label for="gName">Gear Names</label><input type="text" id="gName"/></li>
-                        </li>
-                </fieldset>
-                <input type="submit" value="Log your gear" />
-                <input type="hidden" value=""/>
+                <input type="submit" value="Log your gear" /> <!-- Submit button for form -->
+                <input type="hidden" value=""/>   <!-- hidden button -->
             </form>
         </body>
     </html>
